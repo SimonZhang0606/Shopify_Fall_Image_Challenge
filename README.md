@@ -1,6 +1,6 @@
 # Google Cloud Platform Image Recognition Algorithm
 
-Hi, welcome to my project! What I've built for this challenge is an algorithm that takes in an image and outputs a list of object names with their confidence values and a list of vertices circling where the object is in the image. (See the test cases attached to see what it means exactly) 
+Hi, welcome to my project! What I've built for this challenge is an algorithm that takes in an image and outputs a list of object names with their confidence values and a list of vertices circling where the object is in the image. (See the test cases at the bottom of the read me to see what it means exactly) 
 
 
 Every store that uses the shopify platform is filled with images on products, brands and so on. With vast amounts of images used for marketing products, shops and brand images, by identifying the objects in each image, this application (with the addition of text classifiers in the future) can cluster shops with more accuracy and give insights into how and what shop owners like to put on their pages. 
