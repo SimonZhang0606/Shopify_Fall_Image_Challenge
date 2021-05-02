@@ -3,7 +3,7 @@
 Hi, welcome to my project! What I've built for this challenge is an algorithm that takes in an image and outputs a list of object names with their confidence values and a list of vertices circling where the object is in the image. (See the test cases at the bottom of the read me to see what it means exactly) 
 
 
-Every store that uses the shopify platform is filled with images on products, brands and so on. With vast amounts of images used for marketing products, shops and brand images, by identifying the objects in each image, this application (with the addition of text classifiers in the future) can cluster shops with more accuracy and give insights into how and what shop owners like to put on their pages. 
+In shopify, every store that uses the platform is filled with images on products, brands and so on. With vast amounts of images used for marketing products, shops and brand images, this algorithm can identify the objects in each image, and (with the addition of text classifiers in the future) can map shops to clusters more accurately and give insights into how and what shop owners like to put on their pages. 
 
 
 This image recognition algorithm was derived from a subset of a classifier project that I was working on in a previous term, where we were trying to identify whether or not a store serves alchol through finding alcholic beverages in the images. I figured this was a great overlap since we used GCP's API (which according to the job description is also the cloud Shopify uses), and it happens to be about images. I hope you can get something out of this. Enjoy! 
@@ -16,7 +16,6 @@ Note that this application uses Google Cloud Platform's Vision AI image recognit
 Google Cloud Account with an enabled project 
 
 Google Service Account Key (see https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances) 
-
 
 
 ## How to use:
