@@ -33,13 +33,18 @@ Put the images you wish to classify in the test_input folder, and modify the scr
 Run the script, and your file should be in the ouput.txt file, you may modify the script to reroute the output.txt file or write into a database
 
 
-## Potential Next Steps 
-### Larger Volumes of images (read from database, run script, write to database)  
-### Data Visualization (Get more insights e.g. What image is used the most for X cluster) 
-### GUI or better frontend 
-### Orchastration, scheduled updates to get new images on a daily basis (Airflow or Kubeflow)
-### Combine result with text classifiers (vectorize the result with text classifiers to improve on the algorithm) 
-### Use of big data tools to multithread the process (although I'm not sure if GCP can handle big data ML, need further testing) 
+## How to improve on the project
+1. Larger Volumes of images (read from database, run script, write to database)
+
+2.Data Visualization (Get more insights e.g. What image is used the most for X cluster) 
+
+3. GUI or better frontend 
+
+4. Orchastration, scheduled updates to get new images on a daily basis (Airflow or Kubeflow)
+
+5. Combine result with text classifiers (vectorize the result with text classifiers to improve on the algorithm) 
+
+6. Use of big data tools to multithread the process (although I'm not sure if GCP can handle big data ML, need further testing) 
 
 
 ## Test_1 
