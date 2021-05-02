@@ -1,43 +1,46 @@
 # Google Cloud Platform Image Recognition Algorithm
 
-Hi! Nice to meet you, my name is Simon. This image recognition algorithm was derived from a subset of a classifier project that I was working on in a previous term, where we were trying to identify whether or not a store serves alchol through finding alcholic beverages in the images. I figured this was a great overlap since we used GCP's API (which according to the job description is also the cloud Shopify uses), and it happens to be about images. I hope you can get something out of this basic application. Enjoy! 
+Hi! Nice to meet you, welcome to my project! What I've built for this challenge is an algorithm that takes in an image and outputs a list of object names with their confidence values and a list of vertices circling where the object is in the image. (See the test cases attached to see what it means exactly) 
 
-## Description
 
 Every store that uses the shopify platform is filled with images on products, brands and so on. With vast amounts of images used for marketing products, shops and brand images, by identifying the objects in each image, this application (with the addition of text classifiers in the future) can cluster shops with more accuracy and give insights into how and what shop owners like to put on their pages. 
 
-The algorithm (for now) is quite simple, it takes in an image and outputs a list of object names with their confidence values and a list of vertices circling where the object is in the image. (See sample) 
+
+This image recognition algorithm was derived from a subset of a classifier project that I was working on in a previous term, where we were trying to identify whether or not a store serves alchol through finding alcholic beverages in the images. I figured this was a great overlap since we used GCP's API (which according to the job description is also the cloud Shopify uses), and it happens to be about images. I hope you can get something out of this. Enjoy! 
+
 
 Note that this application uses Google Cloud Platform's Vision AI image recognition algorithm, and will require a service key to work. 
 
 ## Requirements
 
-Python 3.7+
+Google Cloud Account with an enabled project 
 
-Google Cloud SDK https://cloud.google.com/sdk/docs/quickstart
+Google Service Account Key (see https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances) 
 
-Google Service Account Key https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances
+
 
 ## How to use:
 
 ### Step 1: 
 
-Download the git repo, Copy paste your service_account.json file into the service_key.json file in the current repository
+Download the git repo, Copy paste your service_account.json file into the service_key.json file in the current repository and install the required packages
 
 ### Step 2: 
+
 Put the images you wish to classify in the test_input folder, and modify the script to get the files
 
 ### Step 3: 
+
 Run the script, and your file should be in the ouput.txt file, you may modify the script to reroute the output.txt file or write into a database
 
 
 ## Potential Next Steps 
-1. Larger Volumes of images (read from database, run script, write to database) 
-2. Data Visualization (Get more insights e.g. What image is used the most for X cluster) 
-3. GUI or better frontend 
-4. Orchastration, scheduled updates to get new images on a daily basis (Airflow or Kubeflow)
-5. Combine result with text classifiers (vectorize the result with text classifiers to improve on the algorithm) 
-6. Use of big data tools to multithread the process (although I'm not sure if GCP can handle big data ML, need further testing) 
+### Larger Volumes of images (read from database, run script, write to database)  
+### Data Visualization (Get more insights e.g. What image is used the most for X cluster) 
+### GUI or better frontend 
+### Orchastration, scheduled updates to get new images on a daily basis (Airflow or Kubeflow)
+### Combine result with text classifiers (vectorize the result with text classifiers to improve on the algorithm) 
+### Use of big data tools to multithread the process (although I'm not sure if GCP can handle big data ML, need further testing) 
 
 
 ## Test_1 
@@ -79,6 +82,7 @@ Top (confidence: 0.81346195936203)Normalized bounding polygon vertices:  - (0.16
 
 ## Output: 
 Number of objects found: 4
+
 Jug (confidence: 0.8859262466430664)Normalized bounding polygon vertices:  - (0.48973512649536133, 0.06964999437332153) - (0.7321767210960388, 0.06964999437332153) - (0.7321767210960388, 0.6653507351875305) - (0.48973512649536133, 0.6653507351875305)
 
 Tableware (confidence: 0.7439845204353333)Normalized bounding polygon vertices:  - (0.5884758234024048, 0.29087480902671814) - (0.8424186706542969, 0.29087480902671814) - (0.8424186706542969, 0.6717195510864258) - (0.5884758234024048, 0.6717195510864258)
@@ -97,6 +101,7 @@ Tableware (confidence: 0.5782670974731445)Normalized bounding polygon vertices: 
 
 ## Output: 
 Number of objects found: 2
+
 Houseplant (confidence: 0.7535287737846375)Normalized bounding polygon vertices:  - (0.6034814715385437, 0.7095484137535095) - (0.7147200703620911, 0.7095484137535095) - (0.7147200703620911, 0.9282594323158264) - (0.6034814715385437, 0.9282594323158264)
 
 Window (confidence: 0.618610680103302)Normalized bounding polygon vertices:  - (0.8576018214225769, 0.06024782732129097) - (0.9973958134651184, 0.06024782732129097) - (0.9973958134651184, 0.6522799134254456) - (0.8576018214225769, 0.6522799134254456)
@@ -110,6 +115,7 @@ Window (confidence: 0.618610680103302)Normalized bounding polygon vertices:  - (
 
 ## Output: 
 Number of objects found: 3
+
 Animal (confidence: 0.8693267703056335)Normalized bounding polygon vertices:  - (0.5464500784873962, 0.07503174245357513) - (0.9641265273094177, 0.07503174245357513) - (0.9641265273094177, 0.9410836696624756) - (0.5464500784873962, 0.9410836696624756)
 
 Animal (confidence: 0.8574328422546387)Normalized bounding polygon vertices:  - (0.37095701694488525, 0.30803361535072327) - (0.5527566075325012, 0.30803361535072327) - (0.5527566075325012, 0.9756706953048706) - (0.37095701694488525, 0.9756706953048706)
@@ -125,6 +131,7 @@ Animal (confidence: 0.8418520092964172)Normalized bounding polygon vertices:  - 
 
 ## Output: 
 Number of objects found: 10
+
 Top (confidence: 0.9412533044815063)Normalized bounding polygon vertices:  - (0.4403996169567108, 0.15499044954776764) - (0.5517216920852661, 0.15499044954776764) - (0.5517216920852661, 0.3138822913169861) - (0.4403996169567108, 0.3138822913169861)
 
 Top (confidence: 0.939804196357727)Normalized bounding polygon vertices:  - (0.690150797367096, 0.14189459383487701) - (0.786999523639679, 0.14189459383487701) - (0.786999523639679, 0.3276776671409607) - (0.690150797367096, 0.3276776671409607)
@@ -155,6 +162,7 @@ Top (confidence: 0.9118920564651489)Normalized bounding polygon vertices:  - (0.
 ## Output: 
 
 Number of objects found: 4
+
 Dog (confidence: 0.859123706817627)Normalized bounding polygon vertices:  - (0.07287832349538803, 0.08948098868131638) - (0.5458978414535522, 0.08948098868131638) - (0.5458978414535522, 0.9473968148231506) - (0.07287832349538803, 0.9473968148231506)
 
 Houseplant (confidence: 0.7843143343925476)Normalized bounding polygon vertices:  - (0.81277996301651, 0.44156965613365173) - (0.9937962889671326, 0.44156965613365173) - (0.9937962889671326, 0.8231860995292664) - (0.81277996301651, 0.8231860995292664)
